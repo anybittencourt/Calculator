@@ -1,0 +1,77 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.calculator{
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    width: 320px;
+}
+
+.display{
+    background-color: #000;
+    color: #fff;
+    font-size: 3em;
+    padding: 30px;
+    text-align: right;
+    border-radius: 20px 20px 0px 0px; 
+    /* borda apenas em cima */
+    border-bottom:1px solid #444;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* cada coluna tem uma fração -ou-> repeat(4, 1fr)*/
+    gap: 10px;
+    /* espaçamento entre esses elementos */
+    padding: 10px;
+}
+
+.button{
+    background-color: #505050;
+    border: none;
+    font-size: 1.5em;
+    padding: 20px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50px;
+}
+
+.button:hover{
+    background-color: #707070;
+}
+
+.button-grey{
+    background-color: #a6a6a6;
+    color: #000;
+}
+
+.button-grey:hover{
+    background-color: #6b6b6b;
+}
+
+.button-orange{
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.button-orange:hover{
+    background-color: #b86c01;
+}
+
+#size{
+    grid-row: span 3;
+    /* span - vai ocupar 3 a partir do local de nascença dele */
+}
+
+#zero_size{
+    grid-column: span 2;
+}
